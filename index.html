@@ -1,37 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="index.css"> 
     <meta charset="UTF-8">
     <title>Taras Kukharets</title>
 </head>
 <body>
 <header>
-    <h1 align="right"><img src="United-States-Flag-16.png"><img src=Ukraine-Flag-16.png><img src="Russia-Flag-16.png">
+    <h1 align="right"><img src="img/United-States-Flag-16.png"><img src=img/Ukraine-Flag-16.png><img src="img/Russia-Flag-16.png">
     </h1>
     <center><big>Taras Kukharets</big></center>
 </header>
 <aside>
-    <img src="knight.png">
+    <img src="img/knight.png">
 </aside>
 <nav>
-    <a href="index.html"><img src="aboutme.png" alt="Про мене"></a>
-    <a href="index.html"><img src="skills.png" alt="Навички"></a>
-    <a href="index.html"><img src="contacts.png" alt="Контакти"></a>
-    <a href="index.html"><img src="resume.png" alt="Резюме"></a>
-</nav>
-<article>
-
-    <p>Вітаю вас!
-        Мене звуть Тарас, і це мій сайт-візитка.</p>
-
+    <!--<img onclick="skills('aboutme');" src="img/aboutme.png" alt="Про мене">-->
+    <!--<img onclick="skills();" src="img/skills.png" alt= " Навички">-->
+    <!--<img onclick="skills();" src="img/contacts.png" alt="Контакти">-->
+    <!--<img onclick="skills();" src="img/resume.png" alt="Резюме">-->
+    <button style="" title="About">About me</button>
+    <button style="" title="About">My skills</button>
+    <button style="" title="About">Contacts</button>
+    <button style="" title="About">Resume</button>
+    <!--<a href="#" class="button"/>Навички </a>-->
+    <!--<a href="#" class="button"/>Контакти </a>-->
+    <!--<a href="#" class="button"/>Резюме </a>-->
+    
+    
+</nav> 
+<div id = "im"><p>Вітаю вас! Мене звуть Тарас, і це мій сайт-візитка.</p>
     <p>Тут (попередньо) буде текст міні-резюме.</p>
+    <p>Інші кнопки повинні перезавантажувати лише це віконце і підсвічуватись.</p></div>
+<!--<article id="art">-->
 
-    <p>Інші кнопки повинні перезавантажувати лише
-        це віконце і підсвічуватись.</p>
+<!--    <p>Вітаю вас! Мене звуть Тарас, і це мій сайт-візитка.</p>-->
 
-</article>
+<!--    <p>Тут (попередньо) буде текст міні-резюме.</p>-->
+
+<!--    <p>Інші кнопки повинні перезавантажувати лише-->
+<!--        це віконце і підсвічуватись.</p>-->
+
+<!--</article>-->
+<!--<div id ="im"><img id = "pic" src="img/white.png"></div>-->
+<!--<div id ="im"><img id = "pic" src="img/white.png"></div>-->
+<!--<div id = "im"></div>-->
+
 <footer>
     <small>Created by Taras Kukharets</small>
 </footer>
+<script type="text/javascript">
+
+    function skills(button){
+        if (button=="aboutme"){
+        document.getElementById("art").innerHTML = "lol"}
+        
+    }
+</script>
+
 </body>
 </html>
