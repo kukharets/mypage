@@ -1,141 +1,32 @@
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+body { background: url(img/fon.png);
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+#body{margin-left: auto;
+    margin-right: auto;max-width: 1280px}
+header {font:40px "Courier New"; letter-spacing:5px;color:white;}
+#pdown {font:15px "Courier New"; letter-spacing:5px;color:white;margin-top: 0px}
+ul li a {font:10px "Courier New"; text-decoration:none; color: white;padding-top: 3px;}
+ul{position: absolute; top: -5px; right:0px; 
 }
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+li {height: 20px}
+body header p {text-align: center;margin-top: 25px;}
+#line {position:absolute;margin-top: 16px;border-style: dotted ;border-width:1px;border-color: white; 
+z-index: -1;right: 0px}
+#menu {margin-top: 20px;font: 20px "Courier New";color:white;font-weight: bold; z-index: 1000; text-align: center}
+#menutext {
 
 
+    }
+a {padding-left: 50px;
+padding-right: 50px;}
 
+#me {position: absolute;padding:65px;}
+#left {border-style: dotted ;border-width:1px;border-color: white; margin: 40px;float:left;}
+#right {border-style: dotted ;border-width:1px;border-color: white; margin: 40px;float:right;}
+article { text-align: center}
+#maintext {position: absolute; margin:10px; text-align: left;font:20px "Arial"; letter-spacing:2px;color:black; 
+margin-top:40px;}
+p {
+    text-indent: 20px; /* Отступ первой строки в пикселах */
+   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-body { background: url(img/fon.png);margin-left: auto;
-    margin-right: auto; 
-}
-aside  {float:left;margin-left: 50px;margin-top: 50px;padding-right: 40px;padding-bottom: 20px}
-img {cursor: pointer;
-
-}
-nav {margin-left: 30px;margin-top: 50px;}
-footer {
-   position:absolute;
-   bottom:0;
-   width:100%;
-   
-   text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: auto;
-}
-button {text-decoration:none; text-align:center; 
- /*padding:11px 33px; */
-   width:160px;height:30px;
-   margin-bottom: 10px;    margin-right: 10px;
- border:solid 1px gray; 
- -webkit-border-radius:4px;
- -moz-border-radius:4px; 
- border-radius: 4px; 
- font:17px "Courier New", Courier, monospace; 
- font-weight:bold; 
- color:#fcfcfc; 
- background-color:#2f3638; 
- background-image: -moz-linear-gradient(top, #2f3638 0%, #8e9a9e 100%); 
- background-image: -webkit-linear-gradient(top, #2f3638 0%, #8e9a9e 100%); 
- background-image: -o-linear-gradient(top, #2f3638 0%, #8e9a9e 100%); 
- background-image: -ms-linear-gradient(top, #2f3638 0% ,#8e9a9e 100%); 
- filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8e9a9e', endColorstr='#8e9a9e',GradientType=0 ); 
- background-image: linear-gradient(top, #2f3638 0% ,#8e9a9e 100%);   
- -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff; 
- -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;  
- box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;  
-  
-  }
-  
- button:hover{
-   width:160px;height:30px;
- /*padding:11px 33px; */
- border:solid 1px #000000; 
- -webkit-border-radius:4px;
- -moz-border-radius:4px; 
- border-radius: 4px; 
- font:17px "Courier New", Courier, monospace; 
- font-weight:bold; 
- color:#e5ffff; 
- background-color:#2f3638; 
- background-image: -moz-linear-gradient(top, #2f3638 0%, #8e9a9e 100%); 
- background-image: -webkit-linear-gradient(top, #2f3638 0%, #8e9a9e 100%); 
- background-image: -o-linear-gradient(top, #2f3638 0%, #8e9a9e 100%); 
- background-image: -ms-linear-gradient(top, #2f3638 0% ,#8e9a9e 100%); 
- filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8e9a9e', endColorstr='#8e9a9e',GradientType=0 ); 
- background-image: linear-gradient(top, #2f3638 0% ,#8e9a9e 100%);   
- -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff; 
- -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;  
- box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;  
-  
- }
-header {font:40px "Courier New";color:white;}
-/*article{margin-left: 460px;height: 400px;width: 710px;*/
-/* border-color: black; position: absolute;*/
-/*}*/
-/*#im {margin-left: 460px;height: 400px;width: 710px;*/
-/* border-color: black; position: absolute;opacity: 0.5}*/
-/*#pic {;height: 440px;width: 710px; margin-left:10px;*/
-/* border-color: black; position: absolute;opacity: 0.5;z-index: -1}*/
-/* #art {font:19px "cambria",Times, serif  ;font-weight: 500;color:black;z-index: 1000;}*/
-#im {;background-image:url("img/white.png");max-width: inherit;padding: inherit;margin-right: 130px;
-    margin-left: 420px;}
+footer {position: absolute;bottom: 30px;right:40px;font:10px "Courier New"; letter-spacing:2px;color:gray;text-align: center;}

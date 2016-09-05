@@ -1,62 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="reset.css"> 
     <link rel="stylesheet" href="index.css"> 
     <meta charset="UTF-8">
     <title>Taras Kukharets</title>
+     <script
+          src="https://code.jquery.com/jquery-3.1.0.slim.min.js"
+          integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8="
+          crossorigin="anonymous"></script>
 </head>
 <body>
-<header>
-    <h1 align="right"><img src="img/United-States-Flag-16.png"><img src=img/Ukraine-Flag-16.png><img src="img/Russia-Flag-16.png">
-    </h1>
-    <center><big>Taras Kukharets</big></center>
-</header>
-<aside>
-    <img src="img/knight.png">
-</aside>
-<nav>
-    <!--<img onclick="skills('aboutme');" src="img/aboutme.png" alt="Про мене">-->
-    <!--<img onclick="skills();" src="img/skills.png" alt= " Навички">-->
-    <!--<img onclick="skills();" src="img/contacts.png" alt="Контакти">-->
-    <!--<img onclick="skills();" src="img/resume.png" alt="Резюме">-->
-    <button style="" title="About">About me</button>
-    <button style="" title="About">My skills</button>
-    <button style="" title="About">Contacts</button>
-    <button style="" title="About">Resume</button>
-    <!--<a href="#" class="button"/>Навички </a>-->
-    <!--<a href="#" class="button"/>Контакти </a>-->
-    <!--<a href="#" class="button"/>Резюме </a>-->
+    <div id = "body">
+    <header>
+        <p>Taras Kukharets</p>
+        <p id="pdown">multilangue junior developer</p>
+        <ul>
+            <li id="mainlang"><a href="">ENG</a>
+            <li id="steplang_1"><a href="">UKR</a></li>
+            <li id="steplang_2"><a href="">RUS</a></li>
+    </ul>
     
-    
-</nav> 
-<div id = "im"><p>Вітаю вас! Мене звуть Тарас, і це мій сайт-візитка.</p>
-    <p>Тут (попередньо) буде текст міні-резюме.</p>
-    <p>Інші кнопки повинні перезавантажувати лише це віконце і підсвічуватись.</p></div>
-<!--<article id="art">-->
-
-<!--    <p>Вітаю вас! Мене звуть Тарас, і це мій сайт-візитка.</p>-->
-
-<!--    <p>Тут (попередньо) буде текст міні-резюме.</p>-->
-
-<!--    <p>Інші кнопки повинні перезавантажувати лише-->
-<!--        це віконце і підсвічуватись.</p>-->
-
-<!--</article>-->
-<!--<div id ="im"><img id = "pic" src="img/white.png"></div>-->
-<!--<div id ="im"><img id = "pic" src="img/white.png"></div>-->
-<!--<div id = "im"></div>-->
-
-<footer>
-    <small>Created by Taras Kukharets</small>
-</footer>
-<script type="text/javascript">
-
-    function skills(button){
-        if (button=="aboutme"){
-        document.getElementById("art").innerHTML = "lol"}
+    </header>
+   
+       <img id="line" src="img/line.png"></img>
+    <div id = "menu">
         
-    }
-</script>
-
+        <div id ="menutext">
+        <a>ABOUT ME</a><a>SKILLS</a><a>CONTACTS</a><a>RESUME</a>
+        </div>
+        </div>
+    <img id ="me" src="img/myphotonorm.png"></img>
+    <article>
+        <img id="left" src="img/left.png"></img>
+        <div id = "right">
+        <a id = "maintext">
+            <p>Hello, i'm Taras Kukharets. Welcome to my personal syte, here you can get some
+        informacion about me, and more else.</p> <br>
+            <p>So, my profession is programming, and you are obviously interested in my person is on this issue.</p><br>
+            <p>I hope this site will help you get all the necessary information, and if not - contact me in any way convenient for you.</p><br>
+            <p>In any case, I'm always open to new initiatives and cooperation, and I certainly will look into your proposal.</p><br>
+        
+        
+        <br>
+            <p>Have a nice day!</p>
+            
+            
+            </a>
+        <img  src="img/right.png"></img></div>
+    
+    </article></div>
+    <!--<footer>Created by Taras Kukharets © 2016</footer>-->
+    
+    
+    
+    
+    
+    <script>
+        $('#steplang_1, #steplang_2').hide();
+        $('ul').on("mouseenter", function(){
+            $('#steplang_1, #steplang_2').show();
+        })
+        $('ul').on("mouseleave", function(){
+            $('#steplang_1, #steplang_2').hide();
+        })
+       
+    </script>
+<footer>
+    Created by Taras Kukharets © 2016
+</footer>
 </body>
 </html>
